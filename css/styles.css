@@ -1,0 +1,30 @@
+body {
+  background: url("../img/pasta-noodles-cook-tomato-38233.jpeg") no-repeat left top; }
+
+#mjumbo, #rjumbo {
+  background: rgba(255, 255, 255, 0.2); }
+
+.table {
+  background: rgba(255, 255, 255, 0.2); }
+  .table thead th {
+    width: 50%; }
+  .table input {
+    width: 90%;
+    background: rgba(255, 255, 255, 0.2); }
+
+.forms {
+  text-align: center;
+  font-weight: bold; }
+  .forms input {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.2); }
+
+.dbtn {
+  text-align: center; }
+
+#rjumbo {
+  text-align: center; }
+  #rjumbo .table th {
+    width: 22%; }
+  #rjumbo .table th:first-child {
+    width: 12%; }

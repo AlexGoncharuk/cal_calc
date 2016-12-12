@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calorizator</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="row container-fluid">
+    <aside class="col-sm-2"></aside>
+    <section class="col-sm-7">
+        <h1>Calorizator</h1>
+        <div class="row jumbotron" id="mjumbo">
+            <div class="col-sm-3">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>G/B</th>
+                        <th>Amount of gr</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>White bread</td>
+                        <td><input type="number" class="wBread"></td>
+                    </tr><tr>
+                        <td>Black bread</td>
+                        <td><input type="number" class="bBread"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Buckwheat</td>
+                        <td><input type="number" class="buckwheat"></td>
+                    </tr><tr>
+                        <td>Rise</td>
+                        <td><input type="number" class="rise"></td>
+                    </tr><tr>
+                        <td>Oatmeal</td>
+                        <td><input type="number" class="oatmeal"></td>
+                    </tr><tr>
+                        <td>Wheat</td>
+                        <td><input type="number" class="wheat"></td>
+                    </tr><tr>
+                        <td>Peas</td>
+                        <td><input type="number" class="peas"></td>
+                    </tr><tr>
+                        <td>Pasta</td>
+                        <td><input type="number" class="pasta"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-3">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Chicken/meat</th>
+                        <th>Amount of gr</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Breast</td>
+                        <td><input type="number" class="breast"></td>
+                    </tr><tr>
+                        <td>Liver</td>
+                        <td><input type="number" class="liver"></td>
+                    </tr><tr>
+                        <td>Heart</td>
+                        <td><input type="number" class="heart"></td>
+                    </tr><tr>
+                        <td>Egg</td>
+                        <td><input type="number" class="egg"></td>
+                    </tr><tr>
+                        <td>Wing</td>
+                        <td><input type="number" class="wing"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-3">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Vegetables</th>
+                        <th>Amount of gr</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Potato</td>
+                        <td><input type="number" class="potato"></td>
+                    </tr><tr>
+                        <td>Tomato</td>
+                        <td><input type="number" class="tomato"></td>
+                    </tr><tr>
+                        <td>Cucumber</td>
+                        <td><input type="number" class="cucumber"></td>
+                    </tr><tr>
+                        <td>Cabage</td>
+                        <td><input type="number" class="cabage"></td>
+                    </tr><tr>
+                        <td>Onion</td>
+                        <td><input type="number" class="onion"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-3">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Soups</th>
+                        <th>Amount of gr</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Peas soup</td>
+                        <td><input type="number" class="peasS"></td>
+                    </tr><tr>
+                        <td>Cabage soup</td>
+                        <td><input type="number" class="cabageS"></td>
+                    </tr><tr>
+                        <td>Chicken soup</td>
+                        <td><input type="number" class="chickenS"></td>
+                    </tr><tr>
+                        <td>Borscht</td>
+                        <td><input type="number" class="borscht"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-12 dbtn"><button type="submit" class="btn btn-success cbtn">Count</button>
+                <button type="button" class="btn btn-warning rbtn">Reset</button></div>
+            <div class="col-sm-12"><hr></div>
+            <div class="col-sm-3 forms">Proteins: <input  class="nutrients protein" readonly></div>
+            <div class="col-sm-3 forms">Fats: <input type="number" class="nutrients fat" readonly></div>
+            <div class="col-sm-3 forms">Carbohidrates: <input type="number" class="nutrients carbohydrate" readonly></div>
+            <div class="col-sm-3 forms">Kcals: <input type="number" class="nutrients kcals" readonly></div>
+        </div>
+    </section>
+    <aside class="col-sm-3">
+        <h1>Daily ration</h1>
+        <div class="jumbotron" id="rjumbo">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Prt</th>
+                    <th>Fat</th>
+                    <th>Cbh</th>
+                    <th>Kcal</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>1.</th>
+                    <td class="11"></td>
+                    <td class="12"></td>
+                    <td class="13"></td>
+                    <td class="14"></td>
+                </tr>
+                <tr>
+                    <th>2.</th>
+                    <td class="21"></td>
+                    <td class="22"></td>
+                    <td class="23"></td>
+                    <td class="24"></td>
+                </tr>
+                <tr>
+                    <th>3.</th>
+                    <td class="31"></td>
+                    <td class="32"></td>
+                    <td class="33"></td>
+                    <td class="34"></td>
+                </tr>
+                <tr>
+                    <th>4.</th>
+                    <td class="41"></td>
+                    <td class="42"></td>
+                    <td class="43"></td>
+                    <td class="44"></td>
+                </tr>
+                <tr>
+                    <th>5.</th>
+                    <td class="51"></td>
+                    <td class="52"></td>
+                    <td class="53"></td>
+                    <td class="54"></td>
+                </tr>
+                <tr>
+                    <th>6.</th>
+                    <td class="61"></td>
+                    <td class="62"></td>
+                    <td class="63"></td>
+                    <td class="64"></td>
+                </tr>
+                <tr>
+                    <th>Ttl</th>
+                    <td class="t1"></td>
+                    <td class="t2"></td>
+                    <td class="t3"></td>
+                    <td class="t4"></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="col-sm-12"><button type="button" class="btn btn-warning rrbtn">Clear</button></div>
+        </div>
+    </aside>
+
+</div>
+<script src="js/libs.min.js"></script>
+<script data-main="js/app" src="libs/require.js"></script>
+</body>
+</html>
